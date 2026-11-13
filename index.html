@@ -14,6 +14,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    /* Hide a Netlify badge if the hosting platform injects one into the page.
+       This does not affect your website layout or Amazon purchase buttons. */
+    #netlify-badge,
+    #netlify-badge-container,
+    .netlify-badge,
+    [data-netlify-badge],
+    iframe[title*="Netlify"],
+    iframe[aria-label*="Netlify"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
     :root{--navy:#06152e;--navy2:#081d3b;--blue:#1677ff;--cyan:#00d4ff;--gold:#ffc247;--ink:#10213b;--muted:#63728a;--paper:#f5f8fc;--white:#fff}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}button,a{-webkit-tap-highlight-color:transparent}.container{width:min(1140px,calc(100% - 44px));margin:auto}
     .topbar{height:76px;display:flex;align-items:center;justify-content:space-between;color:#fff;position:absolute;top:0;left:0;width:100%;z-index:5}.brand{font:800 17px Manrope,sans-serif;letter-spacing:-.5px}.brand span{color:var(--cyan)}.nav{display:flex;gap:28px;align-items:center;font-size:13px;color:#c7d7ef}.nav a:hover{color:#fff}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:800;transition:.25s ease}.nav-cta{padding:12px 18px;background:#fff;color:#09234a;font-size:12px}.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px #00d4ff44}
